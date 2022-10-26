@@ -1,20 +1,26 @@
 html {
-    background-color: #02bfe7;
+  background-color: #02bfe7;
 }
 
 h1 {
-    color: #212121;
-    text-align: center;
+  color: #212121;
+  text-align: center;
 }
 
 #grid-container {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 'medium solid black';
-    background-color: white;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border: "medium solid black";
+  background-color: white;
+}
+
+.column {
+  flex: 1;
+}
+
+.row {
+  /* background: black; */
 }
