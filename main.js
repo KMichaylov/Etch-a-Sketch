@@ -19,3 +19,20 @@ for (let i = 0; i < inputFromUser; i++) {
   }
   grid.appendChild(squareOnColumn);
 }
+
+let clearBtn = document.getElementById("clear");
+let colorBtn = document.getElementById("color");
+let sizeOfGrid = document.getElementById("size");
+let random = document.getElementById("random");
+
+clearBtn.addEventListener('click', () => {
+  for (let i = 0; i < inputFromUser; i++) {
+    let square = grid.querySelectorAll('div')[i]
+    console.log(square)
+    for (let j = 0; j < inputFromUser; j++) {
+      let element = square.querySelectorAll('div')[j]
+      element.style.backgroundColor = "white";
+      console.log(element)
+    }
+  }
+});
