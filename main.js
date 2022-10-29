@@ -1,5 +1,6 @@
 let grid = document.getElementById("grid-container");
 let inputFromUser = 25;
+let color = "black";
 const CANVAS_SIZE = 500;
 const CELL_SIZE = 500 / inputFromUser;
 const CELL_SIZEINPX = new String(CELL_SIZE + "px");
@@ -35,8 +36,11 @@ clearBtn.addEventListener("click", () => {
   }
 });
 
-let color = "black";
-colorBtn.addEventListener("click", () => {
+colorBtn.addEventListener("input", () => {
   color = document.getElementById("color").value;
 });
 
+grid.addEventListener("mouseover", (e) => {
+  e.target.style.backgroundColor = color;
+  console.log(color);
+});
