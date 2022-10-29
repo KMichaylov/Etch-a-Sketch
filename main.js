@@ -34,3 +34,9 @@ clearBtn.addEventListener("click", () => {
     }
   }
 });
+
+let color = "black";
+colorBtn.addEventListener("click", () => {
+  color = document.getElementById("color").value;
+});
+
