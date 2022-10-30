@@ -68,6 +68,14 @@ button {
   background: url(images/rainbow.jpeg);
 }
 
-#clear {
-  
+
+
+#range-input {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
 }
+
+

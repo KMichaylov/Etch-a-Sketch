@@ -15,12 +15,20 @@
       <div id="controls-container">
         <input id="color" class="controls" type="color" />
         <button id="random" class="controls">Random</button>
-        <input id="size" class="controls" type="range" min="2" max="100" />
+        <div id="range-input">
+          <input
+            id="size"
+            class="controls"
+            type="range"
+            min="2"
+            max="100"
+            oninput="this.nextElementSibling.value = this.value"
+          />
+          <output>25</output>
+        </div>
         <button id="clear" class="controls">Clear</button>
       </div>
     </div>
   </body>
-  <footer>
-    Made by 
-  </footer>
+  <footer>Made by</footer>
 </html>
